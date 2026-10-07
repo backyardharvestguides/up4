@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Blooming Yard Collection | 3-Ebook Flower Gardening Collection</title>
+<meta name="description" content="The Blooming Yard Collection is a set of three digital ebooks that show beginners how to plan flower beds that bloom all season, create a pollinator garden and grow roses.">
+<!--
+  ============================================================
+  UPSELL PAGE. BEFORE PUBLISHING, REPLACE THESE 3 VALUES (use Find & Replace):
+
+  1) YOUR_ACCEPT_LINK_HERE    -> Digistore24 upsell "accept / yes" link
+  2) YOUR_DECLINE_LINK_HERE   -> Digistore24 upsell "decline / no" link
+  3) $17                      -> the exact price of the product created
+                                 in Digistore24
+
+  Support e-mail: contactsuport55@proton.me (already set)
+
+  Digistore24 trust seal: paste the seal code from your Digistore24
+  account inside the element marked  id="digistore-seal"  below.
+  ============================================================
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --deep: #55243f;
+    --deeper: #2a1220;
+    --mid: #7d3a5e;
+    --gold: #c9a452;
+    --gold-light: #ecd695;
+    --cream: #f8f6ee;
+    --card: #ffffff;
+    --ink: #24302a;
+    --muted: #5d6a62;
+    --line: #e6e2d3;
+    --serif: "Lora", Georgia, "Times New Roman", serif;
+    --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body { margin: 0; background: var(--cream); color: var(--ink); font-family: var(--sans); font-size: 17px; line-height: 1.65; }
+  h1, h2, h3 { font-family: var(--serif); font-weight: 600; margin: 0; text-wrap: balance; }
+  p { margin: 0; }
+  a { color: inherit; }
+  .wrap { width: 100%; max-width: 1160px; margin: 0 auto; padding: 0 24px; }
+
+  /* ---------- Hero ---------- */
+  .hero { position: relative; overflow: hidden; color: #f6f1e2; text-align: center;
+    background:
+      radial-gradient(60% 70% at 50% 40%, rgba(125,58,94,.5) 0, transparent 70%),
+      linear-gradient(180deg, #3a1a2c 0, var(--deeper) 100%); }
+  .hero svg.leaves { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+  .hero::after { content: ""; position: absolute; inset: 22px; border: 1px solid rgba(236,214,149,.28); border-radius: 26px; pointer-events: none; }
+  .hero-inner { position: relative; z-index: 1; max-width: 860px; margin: 0 auto; padding: 132px 24px 140px;
+    display: flex; flex-direction: column; align-items: center; }
+  .badge { display: inline-block; font-size: 12.5px; font-weight: 600; letter-spacing: .2em; text-transform: uppercase;
+    color: var(--gold-light); border: 1px solid rgba(236,214,149,.5); border-radius: 999px; padding: 9px 20px; line-height: 1.4; }
+  .hero h1 { font-size: clamp(42px, 6.4vw, 78px); line-height: 1.06; letter-spacing: -.01em; margin-top: 30px; color: #fbf8ee; }
+  .hero p { font-size: clamp(17px, 1.7vw, 20px); line-height: 1.6; color: #dfe6da; max-width: 700px; margin-top: 24px; text-wrap: pretty; }
+  .btn { display: inline-block; text-decoration: none; font-family: var(--sans); font-weight: 700; font-size: 18px; letter-spacing: .01em;
+    color: #2a2208; background: linear-gradient(135deg, var(--gold-light) 0, var(--gold) 100%);
+    border-radius: 999px; padding: 18px 44px; box-shadow: 0 10px 26px -10px rgba(0,0,0,.55); transition: transform .15s ease, box-shadow .15s ease; }
+  .btn:hover { transform: translateY(-2px); box-shadow: 0 16px 30px -12px rgba(0,0,0,.6); }
+  .btn:focus-visible { outline: 3px solid #fff; outline-offset: 3px; }
+  .hero .btn { margin-top: 38px; }
+
+  /* ---------- Sections ---------- */
+  main { padding: 56px 0 72px; }
+  .panel { background: var(--card); border: 1px solid var(--line); border-radius: 24px; padding: 48px; margin-bottom: 32px;
+    box-shadow: 0 18px 40px -32px rgba(27,58,41,.45); }
+  .panel > h2, .offer h2 { font-size: clamp(28px, 3vw, 36px); line-height: 1.2; color: var(--deep); }
+  .panel > h2::after { content: ""; display: block; width: 64px; height: 3px; border-radius: 2px; background: var(--gold); margin-top: 14px; }
+  .lead { color: var(--muted); margin-top: 20px; max-width: 760px; }
+
+  .books { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-top: 30px; }
+  .book { background: #fbfaf5; border: 1px solid var(--line); border-radius: 18px; padding: 28px; display: flex; flex-direction: column; }
+  .num { width: 44px; height: 44px; border-radius: 50%; background: var(--deep); color: var(--gold-light);
+    font-weight: 700; font-size: 15px; display: flex; align-items: center; justify-content: center; flex: none; }
+  .book h3 { font-size: 22px; line-height: 1.28; color: var(--deep); margin-top: 20px; }
+  .book p { color: var(--muted); font-size: 16px; margin-top: 12px; }
+
+  .facts { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; margin-top: 30px; border: 1px solid var(--line); border-radius: 16px; overflow: hidden; }
+  .fact { padding: 18px 22px; border-right: 1px solid var(--line); }
+  .fact:last-child { border-right: 0; }
+  .fact dt { font-size: 12px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+  .fact dd { margin: 4px 0 0; font-weight: 600; color: var(--deep); }
+  dl { margin: 0; }
+
+  .checks { list-style: none; margin: 26px 0 0; padding: 0; display: grid; gap: 14px; }
+  .checks li { display: flex; align-items: flex-start; gap: 14px; }
+  .checks svg { width: 24px; height: 24px; flex: none; margin-top: 2px; }
+
+  /* ---------- Offer ---------- */
+  .offer { text-align: center; color: #f3f0e2; border-radius: 24px; padding: 60px 32px; margin-bottom: 32px;
+    background: linear-gradient(135deg, #55243f 0, #7a3759 60%, #954a6c 100%); box-shadow: 0 24px 46px -30px rgba(15,35,24,.8);
+    display: flex; flex-direction: column; align-items: center; }
+  .offer h2 { color: #fbf8ee; margin-top: 20px; }
+  .offer h2::after { content: ""; display: block; width: 64px; height: 3px; border-radius: 2px; background: var(--gold); margin: 14px auto 0; }
+  .offer .sub { margin-top: 20px; color: #dfe6da; max-width: 560px; }
+  .price { font-family: var(--sans); font-weight: 700; font-size: clamp(58px, 7vw, 76px); line-height: 1; color: var(--gold-light); margin-top: 28px; letter-spacing: -.02em; }
+  .offer .terms { margin-top: 16px; font-weight: 500; }
+  .offer .btn { margin-top: 30px; font-size: 20px; padding: 20px 60px; }
+  .decline { display: inline-block; margin-top: 18px; padding: 12px 22px; border-radius: 999px; border: 1px solid rgba(255,255,255,.45);
+    color: #eef3ec; font-size: 15.5px; font-weight: 500; text-decoration: none; transition: background .15s ease; }
+  .decline:hover { background: rgba(255,255,255,.12); }
+  .decline:focus-visible { outline: 3px solid #fff; outline-offset: 3px; }
+  .secure { margin-top: 26px; font-size: 14.5px; color: #cfdacb; display: flex; align-items: center; justify-content: center; gap: 8px; }
+  .secure svg { width: 16px; height: 16px; flex: none; }
+  .secure span { text-align: left; }
+  #digistore-seal { margin-top: 18px; display: flex; justify-content: center; }
+  #digistore-seal:empty { display: none; }
+
+  /* ---------- Guarantee & policies ---------- */
+  .guarantee { border-left: 6px solid var(--gold); background: #f3f1e6; }
+  .panel > p { color: var(--muted); margin-top: 20px; }
+  .policies { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-bottom: 32px; }
+  .policy { background: var(--card); border: 1px solid var(--line); border-radius: 20px; padding: 32px; box-shadow: 0 18px 40px -32px rgba(27,58,41,.45); }
+  .policy h3 { font-size: 22px; line-height: 1.3; color: var(--deep); font-weight: 700; }
+  .policy p { color: var(--muted); font-size: 16px; margin-top: 14px; }
+  .policy a { color: var(--mid); font-weight: 600; }
+  .contact { text-align: center; display: flex; flex-direction: column; align-items: center; margin-bottom: 0; }
+  .contact h2::after { margin-left: auto; margin-right: auto; }
+  .contact p { max-width: 560px; }
+  .mail { display: inline-block; margin-top: 24px; text-decoration: none; font-weight: 700; color: var(--gold-light); background: var(--deep);
+    border-radius: 999px; padding: 15px 34px; word-break: break-word; transition: background .15s ease; }
+  .mail:hover { background: var(--mid); }
+
+  footer { background: var(--deeper); color: #c9d3c7; text-align: center; padding: 44px 24px; font-size: 14.5px; }
+  footer nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px 26px; margin-bottom: 20px; }
+  footer nav a { color: #e9e3cc; text-decoration: none; font-weight: 500; }
+  footer nav a:hover { text-decoration: underline; }
+  footer p + p { margin-top: 6px; }
+  footer .small { max-width: 760px; margin: 16px auto 0; font-size: 13px; color: #9fae9f; }
+
+  [id] { scroll-margin-top: 24px; }
+
+  @media (max-width: 900px) {
+    .books, .policies { grid-template-columns: 1fr; }
+    .facts { grid-template-columns: repeat(2, 1fr); }
+    .fact:nth-child(2) { border-right: 0; }
+    .fact:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
+  }
+  @media (max-width: 600px) {
+    body { font-size: 16px; }
+    .wrap { padding: 0 16px; }
+    .hero::after { inset: 10px; border-radius: 18px; }
+    .hero-inner { padding: 84px 24px 92px; }
+    .badge { font-size: 11px; letter-spacing: .14em; padding: 8px 14px; }
+    main { padding: 28px 0 44px; }
+    .panel { padding: 30px 22px; border-radius: 20px; margin-bottom: 20px; }
+    .policy { padding: 26px 22px; }
+    .policies { gap: 20px; margin-bottom: 20px; }
+    .offer { padding: 44px 20px; margin-bottom: 20px; }
+    .offer .btn { padding: 18px 20px; width: 100%; max-width: 340px; }
+    .hero .btn { padding: 17px 34px; }
+  }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .btn { transition: none; } }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <svg class="leaves" viewBox="0 0 1600 700" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><g transform="translate(197 271) rotate(7)" opacity="0.52"><path d="M0 0C67 -71 61 -198 0 -254C-61 -198 -67 -71 0 0Z" fill="#7d3a5e"/><path d="M0 0V-234" stroke="#2a1220" stroke-width="1.5" opacity=".5"/></g><g transform="translate(233 458) rotate(31)" opacity="0.78"><path d="M0 0C37 -47 33 -131 0 -167C-33 -131 -37 -47 0 0Z" fill="#7d3a5e"/><path d="M0 0V-154" stroke="#2a1220" stroke-width="1.5" opacity=".5"/></g><g transform="translate(-47 238) rotate(66)" opacity="0.67"><path d="M0 0C84 -99 76 -275 0 -353C-76 -275 -84 -99 0 0Z" fill="#7d3a5e"/><path d="M0 0V-325" stroke="#2a1220" stroke-width="1.5" opacity=".5"/></g><g transform="translate(83 682) rotate(79)" opacity="0.81"><path d="M0 0C81 -93 73 -260 0 -333C-73 -260 -81 -93 0 0Z" fill="#7d3a5e"/><path d="M0 0V-307" stroke="#2a1220" stroke-width="1.5" opacity=".5"/></g><g transform="translate(129 542) rotate(46)" opacity="0.71"><path d="M0 0C71 -84 64 -235 0 -301C-64 -235 -71 -84 0 0Z" fill="#7d3a5e"/><path d="M0 0V-277" stroke="#2a1220" stroke-width="1.5" opacity=".5"/></g><g transform="translate(137 494) rotate(38)" opacity="0.84"><path d="M0 0C83 -78 74 -219 0 -280C-74 -219 -83 -78 0 0Z" fill="#96506f"/><path d="M0 0V-258" stroke="#2a1220" stroke-width="1.5" opacity=".5"/></g><g transform="translate(-37 282) rotate(37)" opacity="0.56"><path d="M0 0C37 -48 33 -133 0 -171C-33 -133 -37 -48 0 0Z" fill="#2e6a40"/><path d="M0 0V-157" stroke="#2a1220" stroke-width="1.5" opacity=".5"/></g><g transform="translate(64 313) rotate(75)" opacity="0.71"><path d="M0 0C65 -81 59 -227 0 -291C-59 -227 -65 -81 0 0Z" fill="#3f1b30"/><path d="M0 0V-267" stroke="#2a1220" stroke-width="1.5" opacity=".5"/></g><g transform="translate(196 513) rotate(29)" opacity="0.8"><path d="M0 0C74 -77 66 -215 0 -276C-66 -215 -74 -77 0 0Z" fill="#5e2a46"/><path d="M0 0V-254" stroke="#2a1220" stroke-width="1.5" opacity=".5"/></g><g transform="translate(153 314) rotate(35)" opacity="0.83"><path d="M0 0C36 -49 32 -135 0 -173C-32 -135 -36 -49 0 0Z" fill="#2e6a40"/><path d="M0 0V-160" stroke="#2a1220" stroke-width="1.5" opacity=".5"/></g><g transform="translate(125 561) rotate(12)" opacity="0.6"><path d="M0 0C38 -45 34 -125 0 -161C-34 -125 -38 -45 0 0Z" fill="#96506f"/><path d="M0 0V-148" stroke="#2a1220" stroke-width="1.5" opacity=".5"/></g><g transform="translate(206 758) rotate(26)" opacity="0.82"><path d="M0 0C50 -55 45 -154 0 -197C-45 -154 -50 -55 0 0Z" fill="#3f1b30"/><path d="M0 0V-182" stroke="#2a1220" stroke-width="1.5" opacity=".5"/></g><g transform="translate(208 248) rotate(45)" opacity="0.54"><path d="M0 0C72 -98 65 -274 0 -352C-65 -274 -72 -98 0 0Z" fill="#3f1b30"/><path d="M0 0V-323" stroke="#2a1220" stroke-width="1.5" opacity=".5"/></g><g transform="translate(192 596) rotate(76)" opacity="0.8"><path d="M0 0C71 -78 64 -216 0 -277C-64 -216 -71 -78 0 0Z" fill="#3f1b30"/><path d="M0 0V-255" stroke="#2a1220" stroke-width="1.5" opacity=".5"/></g><g transform="translate(4 309) rotate(67)" opacity="0.58"><path d="M0 0C53 -59 48 -164 0 -210C-48 -164 -53 -59 0 0Z" fill="#5e2a46"/><path d="M0 0V-193" stroke="#2a1220" stroke-width="1.5" opacity=".5"/></g><g transform="translate(46 618) rotate(55)" opacity="0.74"><path d="M0 0C47 -55 42 -154 0 -198C-42 -154 -47 -55 0 0Z" fill="#5e2a46"/><path d="M0 0V-182" stroke="#2a1220" stroke-width="1.5" opacity=".5"/></g><g transform="translate(234 611) rotate(87)" opacity="0.64"><path d="M0 0C71 -73 64 -203 0 -260C-64 -203 -71 -73 0 0Z" fill="#2e6a40"/><path d="M0 0V-240" stroke="#2a1220" stroke-width="1.5" opacity=".5"/></g><g transform="translate(1399 570) rotate(-12)" opacity="0.71"><path d="M0 0C70 -69 63 -193 0 -247C-63 -193 -70 -69 0 0Z" fill="#96506f"/><path d="M0 0V-227" stroke="#2a1220" stroke-width="1.5" opacity=".5"/></g><g transform="translate(1497 357) rotate(-25)" opacity="0.85"><path d="M0 0C49 -51 44 -142 0 -182C-44 -142 -49 -51 0 0Z" fill="#5e2a46"/><path d="M0 0V-167" stroke="#2a1220" stroke-width="1.5" opacity=".5"/></g><g transform="translate(1456 792) rotate(-28)" opacity="0.52"><path d="M0 0C46 -61 42 -169 0 -217C-42 -169 -46 -61 0 0Z" fill="#7d3a5e"/><path d="M0 0V-199" stroke="#2a1220" stroke-width="1.5" opacity=".5"/></g><g transform="translate(1416 796) rotate(-7)" opacity="0.85"><path d="M0 0C42 -46 38 -128 0 -164C-38 -128 -42 -46 0 0Z" fill="#5e2a46"/><path d="M0 0V-151" stroke="#2a1220" stroke-width="1.5" opacity=".5"/></g><g transform="translate(1420 409) rotate(-25)" opacity="0.46"><path d="M0 0C99 -98 89 -273 0 -350C-89 -273 -99 -98 0 0Z" fill="#5e2a46"/><path d="M0 0V-322" stroke="#2a1220" stroke-width="1.5" opacity=".5"/></g><g transform="translate(1612 423) rotate(-57)" opacity="0.64"><path d="M0 0C50 -51 45 -143 0 -183C-45 -143 -50 -51 0 0Z" fill="#96506f"/><path d="M0 0V-169" stroke="#2a1220" stroke-width="1.5" opacity=".5"/></g><g transform="translate(1620 734) rotate(-26)" opacity="0.83"><path d="M0 0C99 -96 89 -268 0 -344C-89 -268 -99 -96 0 0Z" fill="#3f1b30"/><path d="M0 0V-316" stroke="#2a1220" stroke-width="1.5" opacity=".5"/></g><g transform="translate(1412 602) rotate(-52)" opacity="0.79"><path d="M0 0C60 -83 54 -231 0 -296C-54 -231 -60 -83 0 0Z" fill="#2e6a40"/><path d="M0 0V-273" stroke="#2a1220" stroke-width="1.5" opacity=".5"/></g><g transform="translate(1593 370) rotate(-56)" opacity="0.56"><path d="M0 0C49 -67 44 -186 0 -238C-44 -186 -49 -67 0 0Z" fill="#5e2a46"/><path d="M0 0V-219" stroke="#2a1220" stroke-width="1.5" opacity=".5"/></g><g transform="translate(1546 366) rotate(-42)" opacity="0.53"><path d="M0 0C88 -88 80 -246 0 -315C-80 -246 -88 -88 0 0Z" fill="#5e2a46"/><path d="M0 0V-290" stroke="#2a1220" stroke-width="1.5" opacity=".5"/></g><g transform="translate(1640 478) rotate(-83)" opacity="0.49"><path d="M0 0C43 -48 38 -133 0 -170C-38 -133 -43 -48 0 0Z" fill="#3f1b30"/><path d="M0 0V-156" stroke="#2a1220" stroke-width="1.5" opacity=".5"/></g><g transform="translate(1515 685) rotate(-37)" opacity="0.49"><path d="M0 0C92 -88 83 -244 0 -313C-83 -244 -92 -88 0 0Z" fill="#5e2a46"/><path d="M0 0V-288" stroke="#2a1220" stroke-width="1.5" opacity=".5"/></g><g transform="translate(1536 333) rotate(-25)" opacity="0.73"><path d="M0 0C49 -48 44 -133 0 -171C-44 -133 -49 -48 0 0Z" fill="#5e2a46"/><path d="M0 0V-157" stroke="#2a1220" stroke-width="1.5" opacity=".5"/></g><g transform="translate(1552 410) rotate(-17)" opacity="0.48"><path d="M0 0C88 -95 79 -265 0 -340C-79 -265 -88 -95 0 0Z" fill="#2e6a40"/><path d="M0 0V-313" stroke="#2a1220" stroke-width="1.5" opacity=".5"/></g><g transform="translate(1415 373) rotate(-49)" opacity="0.52"><path d="M0 0C50 -60 45 -168 0 -215C-45 -168 -50 -60 0 0Z" fill="#3f1b30"/><path d="M0 0V-198" stroke="#2a1220" stroke-width="1.5" opacity=".5"/></g><g transform="translate(1385 354) rotate(-57)" opacity="0.72"><path d="M0 0C73 -82 66 -228 0 -293C-66 -228 -73 -82 0 0Z" fill="#3f1b30"/><path d="M0 0V-269" stroke="#2a1220" stroke-width="1.5" opacity=".5"/></g><g transform="translate(1579 348) rotate(-74)" opacity="0.82"><path d="M0 0C51 -66 45 -183 0 -235C-45 -183 -51 -66 0 0Z" fill="#3f1b30"/><path d="M0 0V-216" stroke="#2a1220" stroke-width="1.5" opacity=".5"/></g></svg>
+  <div class="hero-inner">
+    <span class="badge">Add to Your Order: 3-Ebook Flower Gardening Collection</span>
+    <h1>The Blooming Yard Collection</h1>
+    <p>Colour from early spring to late autumn. A practical digital guide collection that shows beginners how to plan flower beds, welcome pollinators and grow roses with confidence.</p>
+    <a class="btn" href="#offer">See This Offer</a>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <section class="panel" id="what-you-receive">
+      <h2>What You Will Receive</h2>
+      <p class="lead">The Blooming Yard Collection is a set of three digital ebooks in PDF format. Each guide is short, clear and focused on one part of creating a colourful, lively garden. This is an optional addition to the order you just placed.</p>
+      <div class="books">
+        <article class="book">
+          <span class="num">01</span>
+          <h3>Flower Beds That Bloom All Season</h3>
+          <p>How to prepare a bed, plan a sequence of bloom, arrange plants like a designer and keep the colour going from spring to autumn.</p>
+        </article>
+        <article class="book">
+          <span class="num">02</span>
+          <h3>The Pollinator Garden</h3>
+          <p>What bees, butterflies and hummingbirds need, which flowers to plant, and how to offer water and shelter, even in a few pots.</p>
+        </article>
+        <article class="book">
+          <span class="num">03</span>
+          <h3>Roses Without the Fuss</h3>
+          <p>A straightforward guide to choosing, planting, feeding and pruning roses, with simple answers to the most common problems.</p>
+        </article>
+      </div>
+      <dl class="facts">
+        <div class="fact"><dt>Format</dt><dd>3 PDF ebooks</dd></div>
+        <div class="fact"><dt>Language</dt><dd>English</dd></div>
+        <div class="fact"><dt>Delivery</dt><dd>By email after purchase</dd></div>
+        <div class="fact"><dt>Works on</dt><dd>Phone, tablet, computer</dd></div>
+      </dl>
+    </section>
+
+    <section class="panel" id="who-it-is-for">
+      <h2>Who This Product Is For</h2>
+      <ul class="checks">
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="12" fill="#55243f"/><path d="M7 12.5l3.2 3.2L17 9" fill="none" stroke="#ecd695" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Beginners who want a colourful yard without guessing what to plant.</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="12" fill="#55243f"/><path d="M7 12.5l3.2 3.2L17 9" fill="none" stroke="#ecd695" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Home owners whose flower beds look good for only a few weeks a year.</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="12" fill="#55243f"/><path d="M7 12.5l3.2 3.2L17 9" fill="none" stroke="#ecd695" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Nature lovers who want more bees, butterflies and birds in the garden.</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="12" fill="#55243f"/><path d="M7 12.5l3.2 3.2L17 9" fill="none" stroke="#ecd695" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Anyone who has always wanted to grow roses but found them intimidating.</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="12" fill="#55243f"/><path d="M7 12.5l3.2 3.2L17 9" fill="none" stroke="#ecd695" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>People with a small yard, a border or a few sunny pots to fill.</span></li>
+      </ul>
+    </section>
+
+    <section class="offer" id="offer">
+      <span class="badge">Optional One-Time Add-On</span>
+      <h2>Add It to Your Order</h2>
+      <p class="sub">Add all 3 ebooks of The Blooming Yard Collection to the order you just placed. This is optional and your original purchase is not affected by your choice.</p>
+      <div class="price">$17</div>
+      <p class="terms">One-time payment. No subscription. Digital product delivered online.</p>
+      <a class="btn" href="YOUR_ACCEPT_LINK_HERE">Yes, Add This to My Order</a>
+      <a class="decline" href="YOUR_DECLINE_LINK_HERE">No thanks, I do not want this offer</a>
+      <p class="secure">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
+        <span>Secure order. This add-on is processed by Digistore24.</span>
+      </p>
+      <!-- Paste your Digistore24 trust seal code between the div tags below -->
+      <div id="digistore-seal"></div>
+    </section>
+
+    <section class="panel" id="legal-notice">
+      <h2>Legal Notice</h2>
+      <p>This product is intended for educational and informational purposes only. Results may vary depending on climate, plant species, gardening methods, soil conditions and individual application. No specific flowering or result is promised or guaranteed. Always read and follow the label directions of any garden product you use. This is a digital product and no physical item will be shipped.</p>
+    </section>
+
+    <section class="panel guarantee" id="guarantee">
+      <h2>60-Day Guarantee</h2>
+      <p>Your purchase is protected by our 60-day satisfaction guarantee. If you are not satisfied with the content for any reason, you may request a full refund within 60 days of your purchase.</p>
+    </section>
+
+    <div class="policies">
+      <section class="policy" id="refund-policy">
+        <h3>Refund Policy</h3>
+        <p>Refund requests must be submitted within the 60-day guarantee period. To request a refund, contact our support team at <a href="mailto:contactsuport55@proton.me">contactsuport55@proton.me</a> with your order details. Approved refunds are processed through the original payment method.</p>
+      </section>
+      <section class="policy" id="privacy-policy">
+        <h3>Privacy Policy &amp; Promotional Emails</h3>
+        <p>We respect your privacy. Your data is used only for order processing, product delivery, customer support and optional promotional communications. Payment details are handled by Digistore24 and are never stored by us.</p>
+        <p>You may unsubscribe from promotional emails at any time by clicking the unsubscribe link included in every email, or by contacting support.</p>
+      </section>
+      <section class="policy" id="terms-of-use">
+        <h3>Terms of Use</h3>
+        <p>By purchasing this product, you receive personal access to the digital materials included. Redistribution, copying, reselling or unauthorized sharing of the content is strictly prohibited.</p>
+        <p>The content is provided for educational purposes only and does not replace professional gardening, landscaping or pest-control advice.</p>
+      </section>
+    </div>
+
+    <section class="panel contact" id="contact">
+      <h2>Contact</h2>
+      <p>If you have questions about your order, access, refunds or technical support, please contact us by email. We are happy to help.</p>
+      <a class="mail" href="mailto:contactsuport55@proton.me">contactsuport55@proton.me</a>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <nav aria-label="Footer">
+    <a href="#refund-policy">Refund Policy</a>
+    <a href="#privacy-policy">Privacy Policy</a>
+    <a href="#terms-of-use">Terms of Use</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <p>&copy; 2026 The Blooming Yard Collection. All rights reserved.</p>
+  <p>This is a digital educational product.</p>
+  <p class="small">Orders are processed by Digistore24, the reseller of this product. For product support, contact <a href="mailto:contactsuport55@proton.me">contactsuport55@proton.me</a>.</p>
+</footer>
+
+</body>
+</html>
